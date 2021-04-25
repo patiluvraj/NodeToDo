@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Node Todo</title>      
+        <link rel="stylesheet" href="/assets/app.css">         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Node Todo</h1>
+        <div id="mainDiv">
+            <div id="userNameDiv">
+                <label>User :</label><input style="margin: 0 0 0 10;" id="txtUserName"/>
+                <input type="button" id="getTodods" value="Get Todos"/><input style="margin-left:10px ;" type="button" id="clearTodods" value="Clear"/>
+                <label id="userErrorMessage" class="erroMessage"></label>                                
+            </div>
+            <div id="opDiv">                
+                <input type="button" id="addTodo" value="Add Todo"/>
+            </div>
+            <div id="noTodosDiv">
+                <label id="noTodosText">No todos, please create todos or enter username and get todos.</label>
+            </div>          
+            <div id="allTodosDiv">
+                
+            </div> 
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <div style="margin-top: 20px;">
+                    <table>
+                        <tr>
+                            <td>User</td>
+                            <td><input style="max-width: 400px;width:100%;" class="col2" id='userNameAdd'/></td>
+                        </tr>
+                        <tr>
+                            <td style="position: fixed;">Todo</td>
+                            <td>
+                                <textarea cols="486" class="col2" id="todoAdd" rows="4"></textarea>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right;">
+                                <input class="col2" type="button" id="btnAddUser" value="Add"> <input type="button" id="btnReset" value="Reset">
+                            </td>
+                        </tr>                        
+                    </table> 
+                    <div><label id="addTodoErrorMessage" class="erroMessage" ></label></div>                                 
+                  </div>                  
+                </div>              
+              </div> 
+        </div>
+        <script type="text/javascript" src="/assets/app.js"></script>
+    </body>
+</html>
